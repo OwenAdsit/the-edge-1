@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+  html {
+    @apply text-vw-mobile sm:text-vw-sm lg:text-vw-lg xl:text-vw-xl 2xl:text-vw-xxl;
+  }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @apply bg-white text-dark;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .app-container {
+    @apply px-7.5 sm:px-5 lg:px-7.5;
+  }
+  .app-container.narrow {
+    @apply xl:px-28;
+  }
+  .divider {
+    @apply border-t border-dark pt-5;
+  }
+
+  .color-primary {
+    @apply bg-dark text-white;
+  }
+  .color-secondary {
+    @apply bg-gray text-dark;
+  }
+  .color-white {
+    @apply bg-white text-dark;
+  }
+  .color-transparent {
+    @apply text-light bg-transparent border-2 border-current;
+  }
+  .color-glass-light {
+    @apply bg-white/45 backdrop-blur-xl text-white;
+  }
+  .btn {
+    @apply px-10 py-4;
+  }
+  .badge {
+    @apply px-2 py-1 leading-none uppercase text-12;
+  }
+  .ui-underline-anim {
+    @apply py-1 leading-none relative before:w-full before:h-px before:bg-current before:absolute before:bottom-0 before:left-0 before:transition-underline-anim before:duration-500 before:scale-x-0 before:origin-right hover:before:origin-left hover:before:scale-x-100;
+  }
+  .ui-underline-anim.reverse {
+    @apply before:scale-x-100 hover:before:scale-x-0;
+  }
+  .pill {
+    @apply rounded-full px-4 py-2;
+  }
+  .circle {
+    @apply aspect-square rounded-full;
+  }
+  /* Typography */
+  .display-1 {
+    @apply text-45 lg:text-55;
+  }
+
+  .display-2 {
+    @apply text-35 lg:text-40;
+  }
+
+  .display-3 {
+    @apply text-35 sm:text-34 lg:text-38;
+  }
+
+  .display-4 {
+    @apply text-30 sm:text-28 lg:text-32;
+  }
+
+  .display-5 {
+    @apply text-26 sm:text-25 lg:text-28;
+  }
+
+  .display-6 {
+    @apply text-22 sm:text-22 lg:text-25;
+  }
+
+  .display-7 {
+    @apply text-24 sm:text-22 lg:text-23;
+  }
+  .text-body {
+    @apply text-18 sm:text-15 lg:text-16;
+  }
+
+  .text-s {
+    @apply text-16 sm:text-14;
+  }
+
+  .text-xs {
+    @apply text-13;
+  }
+
+  .text-xs.uppercase {
+    @apply text-12 lg:text-13;
+  }
+
+  .text-lg {
+    @apply text-17 sm:text-16 lg:text-17;
+  }
+
+  .text-xl {
+    @apply text-20 sm:text-18;
+  }
 }
