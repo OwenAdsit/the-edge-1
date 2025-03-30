@@ -33,6 +33,14 @@ export default {
           raw: "(orientation: landscape)",
         },
       ],
+      md: [
+        {
+          min: "768px",
+        },
+        {
+          raw: "(orientation: landscape)",
+        },
+      ],
       tight: {
         raw: "(max-height: 800px) and (orientation: landscape)",
       },

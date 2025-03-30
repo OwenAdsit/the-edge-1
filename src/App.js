@@ -1,13 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
+import BaliCulinaryPage from "./DiningSection";
 
 function App() {
   return (
     <div className="App">
       <div className="flex justify-center items-center h-screen">
-        <button className="bg-dark text-white   font-bold py-2 px-10 rounded">
-          I'm a button!
-        </button>
+        <BaliCulinaryPage />
       </div>
     </div>
   );
