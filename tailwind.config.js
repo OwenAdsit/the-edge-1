@@ -25,6 +25,7 @@ export default {
           raw: "(orientation: landscape)",
         },
       ],
+      ipad: [{}],
       xl: [
         {
           min: "1280px",
@@ -96,6 +97,14 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+
+      screens: {
+        mobile: "480px", // Adjust based on your preference
+        "ipad-mini": "768px",
+        "ipad-pro": "1024px",
+        desktop: "1280px", // You can adjust this if needed
+      },
+
       colors: {},
       keyframes: {
         "accordion-down": {
