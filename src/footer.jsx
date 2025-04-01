@@ -44,17 +44,25 @@ const EdgeResortFooter = () => {
     { title: "tro", logo: "/tro.png", url: "" },
   ];
 
+  const awards = [
+    { title: "award1", image: "/award-1.png" },
+    { title: "award2", image: "/award-2.png" },
+    { title: "award3", image: "/award-3.png" },
+    { title: "award4", image: "/award-4.png" },
+    { title: "award5", image: "/award-5.png" },
+  ];
+
   return (
-    <div className="w-full app-container  mx-auto p-6 bg-white">
+    <div className="w-full app-container  mx-auto p-6 bg-white h-screen">
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className="space-y-10 grid grid-cols-1 ipad-pro:grid-cols-3 ">
-        <div className="text-center mb-12">
+      <div className="space-y-10 grid grid-cols-1 ipad-pro:grid-cols-3 items-center ">
+        <div className=" mb-12">
           <img
             src="/logo.png"
             alt="Logo"
-            className="w-20 h-20 ipad-mini:w-24 ipad-mini:h-24 ipad-pro:w-32 ipad-pro:h-32 desktop:w-40 desktop:h-40 mx-auto"
+            className="w-20 h-20 ipad-mini:w-24 ipad-mini:h-24 ipad-pro:w-32 ipad-pro:h-32 desktop:w-56 desktop:h-24 max-auto ipad-pro:mx-unset"
           />
         </div>
         {/* Explore Section */}
@@ -205,7 +213,7 @@ const EdgeResortFooter = () => {
         {/* Socal Media Section */}
         <div className="text-start">
           <h1 className="text-gray-700 font-normal mb-4">Socials</h1>
-          <div className="grid grid-cols-5 gap-x-3 ">
+          <div className="flex felx-row gap-5 items-center  ">
             {socialLinks.map((link, index) => (
               <a
                 key={index}
@@ -215,10 +223,61 @@ const EdgeResortFooter = () => {
                 <img
                   src={window.location.origin + link.logo}
                   alt={link.title}
-                  className="w-8 h-8"
+                  className="w-4 h-4"
                 />
               </a>
             ))}
+          </div>
+        </div>
+        {/*award showcase section*/}
+      </div>
+      <div className="w-full overflow-hidden mt-10">
+        <div className="flex flex-row flex-nowrap items-center">
+          {awards.map((award, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 px-2 w-1/2 ipad-mini:w-1/3 ipad-pro:w-1/4 desktop:w-1/5"
+            >
+              <img
+                src={window.location.origin + award.image}
+                alt={award.title}
+                className="w-32 h-36 object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-10">
+        <div className="hidden ipad-pro:flex ipad-pro:flex-row ipad-pro:justify-between ipad-pro:items-center">
+          <span>Reservations@theedgebali.com</span>
+          <span>+62 361 847 0700</span>
+          <span>© 2025 The Edge, All rights reserved.</span>
+          <span>Made With ❤︎ By Two Moons Studio</span>
+          <span>Back to top</span>
+        </div>
+        <div className="hidden ipad-mini:flex flex-col gap-5 ipad-pro:hidden">
+          <div className="flex items-center justify-between">
+            {" "}
+            <span>Reservations@theedgebali.com</span>
+            <span>+62 361 847 0700</span>
+            <span>© 2025 The Edge, All rights reserved.</span>
+          </div>
+          <div className=" flex items-center justify-between">
+            <span>Made With ❤︎ By Two Moons Studio</span>
+            <span>Back to top</span>
+          </div>
+        </div>
+        <div className=" flex flex-col gap-5 ipad-mini:hidden">
+          <div className="flex items-center justify-between">
+            {" "}
+            <span>Reservations@theedgebali.com</span>
+            <span>+62 361 847 0700</span>
+          </div>
+          <span>© 2025 The Edge, All rights reserved.</span>
+          <div className=" flex items-center justify-between">
+            <span>Made With ❤︎ By Two Moons Studio</span>
+            <span>Back to top</span>
           </div>
         </div>
       </div>
