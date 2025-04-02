@@ -20,21 +20,19 @@ const pratners = [
 ];
 const PratnerSections = () => {
   return (
-    <div className="w-full overflow-hidden mt-10 h-screen">
-      <div className="flex flex-row flex-nowrap items-center">
-        {pratners.map((pratner, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 px-2 w-1/2 ipad-mini:w-1/4 ipad-pro:w-1/4 desktop:w-1/4"
-          >
-            <img
-              src={window.location.origin + pratner.image}
-              alt={pratner.title}
-              className="w-28 h-10 object-contain"
-            />
-          </div>
-        ))}
-      </div>
+    <div className="flex flex-row flex-nowrap items-center justify-center mt-10 mb-10">
+      {pratners.map((pratner, index) => (
+        <div
+          key={index}
+          className="flex-shrink-0 px-2 w-1/2 ipad-mini:w-1/4 ipad-pro:w-1/4 desktop:w-1/4"
+        >
+          <img
+            src={window.location.origin + pratner.image}
+            alt={pratner.title}
+            className="w-28 h-10 object-contain"
+          />
+        </div>
+      ))}
     </div>
   );
 };

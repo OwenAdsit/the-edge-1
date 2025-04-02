@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import BaliCulinaryPage from "./DiningSection";
 import ResponsiveAwardsTable from "./award-table";
@@ -11,9 +10,12 @@ function App() {
     <div className="App">
       <div className="flex flex-col h-screen">
         <PratnerSections />
+
         <BaliCulinaryPage />
         <ContentSection />
+
         <ResponsiveAwardsTable />
+
         <EdgeResortNavigation />
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { MoveUpRight } from "lucide-react";
 import React, { useState } from "react";
 // import { ArrowRight } from "lucide-react";
 
@@ -46,10 +47,10 @@ const EdgeResortFooter = () => {
 
   const awards = [
     { title: "award1", image: "/award-1.png" },
-    { title: "award2", image: "/award-2.png" },
-    { title: "award3", image: "/award-3.png" },
     { title: "award4", image: "/award-4.png" },
     { title: "award5", image: "/award-5.png" },
+    { title: "award2", image: "/award-2.png" },
+    { title: "award3", image: "/award-3.png" },
   ];
 
   return (
@@ -57,50 +58,40 @@ const EdgeResortFooter = () => {
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className="space-y-10 grid grid-cols-1 ipad-pro:grid-cols-3 items-center ">
-        <div className=" mb-12">
+      <div className=" grid grid-cols-1 gap-y-12 ipad-pro:grid-cols-3   ">
+        <div className=" flex justify-center ipad-pro:justify-start ">
           <img
             src="/logo.png"
             alt="Logo"
-            className="w-20 h-20 ipad-mini:w-24 ipad-mini:h-24 ipad-pro:w-32 ipad-pro:h-32 desktop:w-56 desktop:h-24 max-auto ipad-pro:mx-unset"
+            className="w-[134px] h-[64px] desktop:w-[228px] desktop:h-[118px] ipad-pro:w-[184px] ipad-pro:h-[87px]  "
           />
         </div>
         {/* Explore Section */}
         <div className="text-start">
-          <h2 className="text-gray-700 text-start font-normal mb-6">Explore</h2>
+          <h2 className=" text-start text-18 font-semibold ipad-mini:text-15 ipad-pro:text-16 mb-6">
+            Explore
+          </h2>
 
           {/* Desktop Grid - 4 columns */}
-          <div className="hidden ipad-pro:grid ipad-pro:grid-cols-2 ipad-pro:gap-x-2 ipad-pro:gap-y-2">
+          <div className="hidden ipad-pro:grid ipad-pro:grid-cols-2 ipad-pro:gap-x-2 ipad-pro:gap-y-3 test-start">
             {exploreLinks.map((link, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a key={index} href="#" className="text-16">
                 {link.title}
               </a>
             ))}
           </div>
-          <div className="hidden  ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-4 sm:gap-y-3 ipad-pro:hidden ">
+          <div className="hidden  ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-2 sm:gap-y-3 ipad-pro:hidden text-start ">
             {exploreLinks.map((link, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a key={index} href="#" className="text-15">
                 {link.title}
               </a>
             ))}
           </div>
 
           {/* Mobile Grid - 3 columns for explore */}
-          <div className="grid grid-cols-3 gap-x-4 gap-y-3 ipad-mini:hidden">
+          <div className="grid grid-cols-3 gap-x-2 gap-y-3 ipad-mini:hidden text-start">
             {exploreLinks.map((link, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a key={index} href="#" className="text-18">
                 {link.title}
               </a>
             ))}
@@ -109,9 +100,11 @@ const EdgeResortFooter = () => {
 
         {/* Accommodations Section */}
         <div className="text-start">
-          <h2 className="text-gray-700 font-normal mb-6">Accommodations</h2>
+          <h2 className=" font-semibold  text-18 ipad-mini:text-15 ipad-pro:text-16  mb-6">
+            Accommodations
+          </h2>
 
-          <div className="hidden ipad-pro:grid md:grid-cols-2 ipad-pro:gap-x-2 ipad-pro:gap-y-3">
+          <div className="hidden ipad-pro:grid md:grid-cols-2 ipad-pro:gap-x-2 ipad-pro:gap-y-3 text-start">
             {accommodationLinks.map((link, index) => (
               <a
                 key={index}
@@ -119,32 +112,23 @@ const EdgeResortFooter = () => {
                 className="text-gray-600 hover:text-gray-900"
               >
                 {link.title}{" "}
-                <span className="text-gray-500">({link.bedrooms} Bedroom)</span>
+                <span className="text-16">({link.bedrooms} Bedroom)</span>
               </a>
             ))}
           </div>
-          <div className="hidden ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-4 ipad-mini:gap-y-3 ipad-pro:hidden">
+          <div className="hidden ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-2 ipad-mini:gap-y-3 ipad-pro:hidden text-start">
             {accommodationLinks.map((link, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
-                {link.title}{" "}
-                <span className="text-gray-500">({link.bedrooms} Bedroom)</span>
+              <a key={index} href="#" className="text-15">
+                {link.title} <span className="">({link.bedrooms} Bedroom)</span>
               </a>
             ))}
           </div>
 
-          <div className="grid grid-cols-2 gap-x-4 gap-y-3 ipad-mini:hidden">
+          <div className="grid grid-cols-2 gap-x-2 gap-y-3 ipad-mini:hidden text-start">
             {accommodationLinks.map((link, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a key={index} href="#" className="">
                 {link.title}{" "}
-                <span className="text-gray-500">({link.bedrooms} Bedroom)</span>
+                <span className="text-18">({link.bedrooms} Bedroom)</span>
               </a>
             ))}
           </div>
@@ -152,53 +136,49 @@ const EdgeResortFooter = () => {
 
         {/* Newsletter Section */}
         <div className="text-start">
-          <h2 className="text-gray-700 font-normal mb-4">Newsletter</h2>
+          <h2 className="text-18 font-semibold ipad-mini:text-15 ipad-pro:text-16 mb-6">
+            Newsletter
+          </h2>
 
           <input
             type="email"
             placeholder="Email"
-            className="w-full md:w-64 p-2 border-b border-gray-300 focus:outline-none focus:border-gray-500"
+            className="w-full md:w-64 p-2 border-b border-dark"
             required
           />
-          <p className="text-xs text-gray-500 mt-2 mb-4">
+          <p className="text-13 mt-2 mb-4">
             By subscribing I accept the Privacy Policy of this site.
           </p>
           <button
             type="submit"
-            className="inline-flex items-center text-gray-700 font-medium hover:text-gray-900"
+            className="inline-flex items-center gap-2 border-b border-dark"
           >
-            Subscribe
+            Subscribe <MoveUpRight size={20} strokeWidth={1} />
           </button>
         </div>
 
         {/* Help Section */}
         <div className="text-start">
-          <h2 className="text-gray-700 font-normal mb-6">Help</h2>
+          <h2 className="font-semibold ipad-mini:text-15 ipad-pro:text-16 mb-6">
+            Help
+          </h2>
 
-          <div className="hidden ipad-pro:grid ipad-pro:grid-cols-2 ipad-pro:gap-x-4 ipad-pro:gap-y-3">
+          <div className="hidden ipad-pro:grid ipad-pro:grid-cols-2 ipad-pro:gap-x-4 ipad-pro:gap-y-3 text-16 text-start ">
             {helpLinks.map((link, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a key={index} href="#" className="">
                 {link.title}
               </a>
             ))}
           </div>
-          <div className="hidden ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-4 ipad-mini:gap-y-3 ipad-pro:hidden">
+          <div className="hidden ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-4 ipad-mini:gap-y-3 ipad-pro:hidden text-15 text-start">
             {helpLinks.map((link, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a key={index} href="#" className="">
                 {link.title}
               </a>
             ))}
           </div>
 
-          <div className="grid grid-cols-2 gap-x-4 gap-y-3 ipad-mini:hidden">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-3 ipad-mini:hidden text-18">
             {helpLinks.map((link, index) => (
               <a
                 key={index}
@@ -212,18 +192,16 @@ const EdgeResortFooter = () => {
         </div>
         {/* Socal Media Section */}
         <div className="text-start">
-          <h1 className="text-gray-700 font-normal mb-4">Socials</h1>
-          <div className="flex felx-row gap-5 items-center  ">
+          <h1 className="font-semibold ipad-mini:text-15 ipad-pro:text-16 mb-6">
+            Socials
+          </h1>
+          <div className="flex felx-row gap-10 items-center  ">
             {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a key={index} href={link.url} className="">
                 <img
                   src={window.location.origin + link.logo}
                   alt={link.title}
-                  className="w-4 h-4"
+                  className="w-5 h-5"
                 />
               </a>
             ))}
@@ -231,8 +209,8 @@ const EdgeResortFooter = () => {
         </div>
         {/*award showcase section*/}
       </div>
-      <div className="w-full overflow-hidden mt-10">
-        <div className="flex flex-row flex-nowrap items-center">
+      <div className="w-full overflow-hidden mt-16">
+        <div className="flex flex-row flex-nowrap items-center ">
           {awards.map((award, index) => (
             <div
               key={index}
@@ -241,22 +219,25 @@ const EdgeResortFooter = () => {
               <img
                 src={window.location.origin + award.image}
                 alt={award.title}
-                className="w-32 h-36 object-contain"
+                className="w-[117px] h-[87px] object-contain"
               />
             </div>
           ))}
         </div>
       </div>
 
-      <div className="mt-10">
-        <div className="hidden ipad-pro:flex ipad-pro:flex-row ipad-pro:justify-between ipad-pro:items-center">
+      <div className="mt-16 text-12">
+        <div className="hidden ipad-pro:flex ipad-pro:flex-row ipad-pro:justify-between ipad-pro:items-center mb-6 ">
           <span>Reservations@theedgebali.com</span>
           <span>+62 361 847 0700</span>
           <span>© 2025 The Edge, All rights reserved.</span>
-          <span>Made With ❤︎ By Two Moons Studio</span>
-          <span>Back to top</span>
+          <span>
+            Made With ❤︎ By{" "}
+            <button className="border-b border-dark"> Two Moons Studio</button>
+          </span>
+          <button className="border-b border-dark">Back to top</button>
         </div>
-        <div className="hidden ipad-mini:flex flex-col gap-5 ipad-pro:hidden">
+        <div className="hidden ipad-mini:flex flex-col gap-5 ipad-pro:hidden mb-6">
           <div className="flex items-center justify-between">
             {" "}
             <span>Reservations@theedgebali.com</span>
@@ -264,11 +245,17 @@ const EdgeResortFooter = () => {
             <span>© 2025 The Edge, All rights reserved.</span>
           </div>
           <div className=" flex items-center justify-between">
-            <span>Made With ❤︎ By Two Moons Studio</span>
-            <span>Back to top</span>
+            <span>
+              Made With ❤︎ By{" "}
+              <button className="border-b border-dark">
+                {" "}
+                Two Moons Studio
+              </button>
+            </span>
+            <button className="border-b border-dark">Back to top</button>
           </div>
         </div>
-        <div className=" flex flex-col gap-5 ipad-mini:hidden">
+        <div className=" flex flex-col gap-5 ipad-mini:hidden mb-6">
           <div className="flex items-center justify-between">
             {" "}
             <span>Reservations@theedgebali.com</span>
@@ -276,8 +263,14 @@ const EdgeResortFooter = () => {
           </div>
           <span>© 2025 The Edge, All rights reserved.</span>
           <div className=" flex items-center justify-between">
-            <span>Made With ❤︎ By Two Moons Studio</span>
-            <span>Back to top</span>
+            <span>
+              Made With ❤︎{" "}
+              <button className="border-b border-dark">
+                {" "}
+                Two Moons Studio
+              </button>
+            </span>
+            <button className="border-b border-dark">Back to top</button>
           </div>
         </div>
       </div>

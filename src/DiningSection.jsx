@@ -1,3 +1,4 @@
+import { MoveUpRight } from "lucide-react";
 import React from "react";
 // import { ArrowUpRight } from "lucide-react";
 
@@ -11,16 +12,13 @@ function DiningSection() {
           <div className="grid grid-cols-2 gap-16 md:mb-10 lg:mb-16">
             {/* Text Content */}
             <div className="flex flex-col flex-1 items-start justify-center  px-2 lg:px-24">
-              <h1 className="text-4xl lg:text-5xl font-light tracking-wide mb-6 text-start ">
+              <h1 className="text-24 font-normal mb-6 text-start ">
                 High tea by the ocean, sunset spritz on the cliff, and elegant
                 dinners—experience a true culinary escape in southern Bali.
               </h1>
-              <a
-                href="#"
-                className="text-lg hover:text-gray-600 transition-colors underline"
-              >
-                See dining options
-              </a>
+              <button className="text-17 h transition-colors  flex flex-row gap-1 items-center border-b border-dark">
+                See dining options <MoveUpRight size={20} strokeWidth={1} />
+              </button>
             </div>
 
             {/* First Image */}
@@ -45,8 +43,8 @@ function DiningSection() {
             </div>
 
             {/* Description */}
-            <div className="flex flex-1 items-center lg:px-32 ">
-              <p className="text-lg text-gray-600  text-start">
+            <div className="flex flex-1 items-center justify-center px-2 lg:px-24">
+              <p className="text-15  text-start ">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua. At vero eos et accusam et
@@ -61,18 +59,15 @@ function DiningSection() {
 
       {/* iPad Mini and Mobile Layout (below md) */}
       <div className="md:hidden">
-        <div className="px-4 py-12">
-          <h1 className="text-3xl font-light tracking-wide mb-6">
+        <div className="px-4 py-12 ">
+          <h1 className="text-24 font-normal  text-start ">
             High tea by the ocean, sunset spritz on the cliff, and elegant
             dinners—experience a true culinary escape in southern Bali.
           </h1>
 
-          <a
-            href="#"
-            className="inline-flex items-center text-lg mb-8 hover:text-gray-600 transition-colors"
-          >
-            See dining options
-          </a>
+          <button className="text-17 transition-colors  flex flex-row gap-1 items-center border-b border-dark mb-6">
+            See dining options <MoveUpRight size={20} strokeWidth={1} />
+          </button>
 
           <img
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
@@ -80,7 +75,7 @@ function DiningSection() {
             className="w-full h-[300px] object-cover mb-8"
           />
 
-          <p className="text-gray-600 leading-relaxed mb-8">
+          <p className="text-15  text-start mb-6">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
@@ -91,7 +86,7 @@ function DiningSection() {
           <img
             src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop"
             alt="Restaurant ambiance"
-            className="w-full h-[300px] object-cover"
+            className="w-full h-[300px] object-cover mb-6"
           />
         </div>
       </div>

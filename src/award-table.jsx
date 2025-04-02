@@ -57,16 +57,16 @@ const ResponsiveAwardsTable = () => {
           <div key={index} className="py-4">
             {/* Mobile view (default) - Stacked layout */}
             <div className="md:hidden flex flex-col items-start">
-              <div className="text-gray-600">{item.year}</div>
-              <div className="font-medium my-1">{item.award}</div>
-              <div className="text-gray-600">{item.issuer}</div>
+              <div className="text-14">{item.year}</div>
+              <div className="text-14">{item.award}</div>
+              <div className="text-14">{item.issuer}</div>
             </div>
 
             {/* Desktop view (md and up) - Grid layout */}
-            <div className="hidden md:grid md:grid-cols-3">
-              <div className=" text-start">{item.year}</div>
-              <div className="font-medium text-start">{item.award}</div>
-              <div className="text-right ">{item.issuer}</div>
+            <div className="hidden md:grid md:grid-cols-3 py-6">
+              <div className=" text-start text-14">{item.year}</div>
+              <div className="text-14 text-start">{item.award}</div>
+              <div className="text-right text-14 ">{item.issuer}</div>
             </div>
           </div>
         ))}
