@@ -48,7 +48,7 @@ const ResponsiveAwardsTable = () => {
 
   return (
     <div className="p-6 w-full app-container mx-auto">
-      <h1 className="text-5xl font-medium text-gray-700 mb-6 text-start">
+      <h1 className="text-45 ipad-pro:text-55 font-normal mb-6 text-start">
         Awards
       </h1>
       <hr />

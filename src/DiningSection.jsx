@@ -1,6 +1,5 @@
 import { MoveUpRight } from "lucide-react";
 import React from "react";
-// import { ArrowUpRight } from "lucide-react";
 
 function DiningSection() {
   return (
@@ -57,7 +56,6 @@ function DiningSection() {
         </div>
       </div>
 
-      {/* iPad Mini and Mobile Layout (below md) */}
       <div className="md:hidden">
         <div className="px-4 py-12 ">
           <h1 className="text-24 font-normal  text-start ">
