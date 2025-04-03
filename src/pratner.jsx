@@ -20,7 +20,7 @@ const pratners = [
 ];
 const PratnerSections = () => {
   return (
-    <div className="flex flex-row flex-nowrap items-center justify-center mt-10 mb-10">
+    <div className="flex flex-row flex-nowrap items-center  mt-10 mb-10  overflow-hidden">
       {pratners.map((pratner, index) => (
         <div
           key={index}

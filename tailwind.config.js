@@ -26,6 +26,7 @@ export default {
         },
       ],
       ipad: [{}],
+
       xl: [
         {
           min: "1280px",
@@ -102,7 +103,7 @@ export default {
         mobile: "480px", // Adjust based on your preference
         "ipad-mini": "768px",
         "ipad-pro": "1024px",
-        desktop: "1280px", // You can adjust this if needed
+        desktop: "1366px", // You can adjust this if needed
       },
 
       colors: {},

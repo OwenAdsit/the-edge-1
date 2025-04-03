@@ -106,13 +106,9 @@ const EdgeResortFooter = () => {
 
           <div className="hidden ipad-pro:grid md:grid-cols-2 ipad-pro:gap-x-2 ipad-pro:gap-y-3 text-start">
             {accommodationLinks.map((link, index) => (
-              <a
-                key={index}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a key={index} href="#" className="text-16 ">
                 {link.title}{" "}
-                <span className="text-16">({link.bedrooms} Bedroom)</span>
+                <span className="text-13">({link.bedrooms} Bedroom)</span>
               </a>
             ))}
           </div>
@@ -126,9 +122,9 @@ const EdgeResortFooter = () => {
 
           <div className="grid grid-cols-2 gap-x-2 gap-y-3 ipad-mini:hidden text-start">
             {accommodationLinks.map((link, index) => (
-              <a key={index} href="#" className="">
+              <a key={index} href="#" className="text-18">
                 {link.title}{" "}
-                <span className="text-18">({link.bedrooms} Bedroom)</span>
+                <span className="text-14">({link.bedrooms}Bedroom)</span>
               </a>
             ))}
           </div>
