@@ -3,7 +3,7 @@ import React from "react";
 
 function DiningSection() {
   return (
-    <div className="w-full bg-white h-screen">
+    <div className="w-full bg-white min-h-screen">
       {/* Desktop and iPad Pro Layout (md and up) */}
       <div className="hidden ipad-pro:block">
         <div className="app-container mx-auto px-4 py-16 desktop:py-24">

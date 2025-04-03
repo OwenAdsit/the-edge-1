@@ -8,7 +8,7 @@ import PratnerSections from "./pratner";
 function App() {
   return (
     <div className="App">
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col ">
         <PratnerSections />
 
         <BaliCulinaryPage />

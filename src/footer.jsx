@@ -205,7 +205,7 @@ const EdgeResortFooter = () => {
         </div>
         {/*award showcase section*/}
       </div>
-      <div className="w-full overflow-hidden mt-16">
+      <div className="w-full overflow-clip mt-16">
         <div className="flex flex-row flex-nowrap items-center ">
           {awards.map((award, index) => (
             <div
