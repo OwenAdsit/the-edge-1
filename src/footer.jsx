@@ -54,11 +54,11 @@ const EdgeResortFooter = () => {
   ];
 
   return (
-    <div className="w-full app-container  mx-auto bg-white h-screen mt-10">
+    <div className="w-full app-container  mx-auto bg-white h-screen mt-10 text-body">
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className=" grid grid-cols-1 gap-y-20 lg:grid-cols-3   ">
+      <div className=" grid grid-cols-1 gap-y-20 lg:grid-cols-3  xl:gap-x-[20%]">
         <div className=" flex justify-center lg:justify-start ">
           <img
             src="/logo.png"
@@ -68,21 +68,19 @@ const EdgeResortFooter = () => {
         </div>
         {/* Explore Section */}
         <div className="text-start">
-          <h2 className=" text-start text-18 font-semibold sm:text-15 lg:text-16 mb-6">
-            Explore
-          </h2>
+          <h2 className=" text-start font-semibold  mb-6">Explore</h2>
 
           {/* xl Grid - 4 columns */}
           <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 test-start">
             {exploreLinks.map((link, index) => (
-              <a key={index} href="#" className="text-16">
+              <a key={index} href="#" className="">
                 {link.title}
               </a>
             ))}
           </div>
           <div className="hidden  sm:grid sm:grid-cols-4 sm:gap-x-2 sm:gap-y-3 lg:hidden text-start ">
             {exploreLinks.map((link, index) => (
-              <a key={index} href="#" className="text-15">
+              <a key={index} href="#" className="">
                 {link.title}
               </a>
             ))}
@@ -91,7 +89,7 @@ const EdgeResortFooter = () => {
           {/* Mobile Grid - 3 columns for explore */}
           <div className="grid grid-cols-3 gap-x-2 gap-y-3 sm:hidden text-start">
             {exploreLinks.map((link, index) => (
-              <a key={index} href="#" className="text-18">
+              <a key={index} href="#" className="">
                 {link.title}
               </a>
             ))}
@@ -100,31 +98,30 @@ const EdgeResortFooter = () => {
 
         {/* Accommodations Section */}
         <div className="text-start">
-          <h2 className=" font-semibold  text-18 sm:text-15 lg:text-16  mb-6">
-            Accommodations
-          </h2>
+          <h2 className=" font-semibold   mb-6">Accommodations</h2>
 
           <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 text-start">
             {accommodationLinks.map((link, index) => (
-              <a key={index} href="#" className="text-16 ">
+              <a key={index} href="#">
                 {link.title}{" "}
-                <span className="text-13">({link.bedrooms} Bedroom)</span>
+                <span className="text-xs">({link.bedrooms} Bedroom)</span>
               </a>
             ))}
           </div>
           <div className="hidden sm:grid sm:grid-cols-4 sm:gap-x-2 sm:gap-y-3 lg:hidden text-start">
             {accommodationLinks.map((link, index) => (
               <a key={index} href="#" className="text-15">
-                {link.title} <span className="">({link.bedrooms} Bedroom)</span>
+                {link.title}{" "}
+                <span className="text-xs">({link.bedrooms} Bedroom)</span>
               </a>
             ))}
           </div>
 
           <div className="grid grid-cols-2 gap-x-2 gap-y-3 sm:hidden text-start">
             {accommodationLinks.map((link, index) => (
-              <a key={index} href="#" className="text-18">
+              <a key={index} href="#" className="">
                 {link.title}{" "}
-                <span className="text-14">({link.bedrooms}Bedroom)</span>
+                <span className="text-xs">({link.bedrooms}Bedroom)</span>
               </a>
             ))}
           </div>
@@ -132,14 +129,12 @@ const EdgeResortFooter = () => {
 
         {/* Newsletter Section */}
         <div className="text-start">
-          <h2 className="text-18 font-semibold sm:text-15 lg:text-16 mb-6">
-            Newsletter
-          </h2>
+          <h2 className=" font-semibold mb-6">Newsletter</h2>
 
           <input
             type="email"
             placeholder="Email"
-            className="w-full md:w-64 p-2 border-b border-dark"
+            className="w-full sm:w-72 p-2 border-b border-dark"
             required
           />
           <p className="text-13 mt-2 mb-4">
@@ -155,16 +150,16 @@ const EdgeResortFooter = () => {
 
         {/* Help Section */}
         <div className="text-start">
-          <h2 className="font-semibold sm:text-15 lg:text-16 mb-6">Help</h2>
+          <h2 className="font-semibold sm:text-15  mb-6">Help</h2>
 
-          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-4 lg:gap-y-3 text-16 text-start ">
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-4 lg:gap-y-3  text-start ">
             {helpLinks.map((link, index) => (
               <a key={index} href="#" className="">
                 {link.title}
               </a>
             ))}
           </div>
-          <div className="hidden sm:grid sm:grid-cols-4 sm:gap-x-4 sm:gap-y-3 lg:hidden text-15 text-start">
+          <div className="hidden sm:grid sm:grid-cols-4 sm:gap-x-4 sm:gap-y-3 lg:hidden  text-start">
             {helpLinks.map((link, index) => (
               <a key={index} href="#" className="">
                 {link.title}
@@ -172,7 +167,7 @@ const EdgeResortFooter = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 gap-x-4 gap-y-3 sm:hidden text-18">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-3 sm:hidden ">
             {helpLinks.map((link, index) => (
               <a
                 key={index}
@@ -186,7 +181,7 @@ const EdgeResortFooter = () => {
         </div>
         {/* Socal Media Section */}
         <div className="text-start">
-          <h1 className="font-semibold sm:text-15 lg:text-16 mb-6">Socials</h1>
+          <h1 className="font-semibold  mb-6">Socials</h1>
           <div className="flex felx-row gap-10 items-center  ">
             {socialLinks.map((link, index) => (
               <a key={index} href={link.url} className="">
