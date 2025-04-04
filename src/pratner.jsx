@@ -25,12 +25,12 @@ const PratnerSections = () => {
         {pratners.map((pratner, index) => (
           <div
             key={index}
-            className="flex-shrink-0 px-2 w-1/2 ipad-mini:w-1/4 ipad-pro:w-1/4 desktop:w-1/4"
+            className="flex-shrink-0 px-2 w-1/2 sm:w-1/4 lg:w-1/4 xl:w-1/4 xl:px-6"
           >
             <img
               src={window.location.origin + pratner.image}
               alt={pratner.title}
-              className="w-28 h-10 object-contain"
+              className="w-28 xl:w-32 xl:h-12 h-10 object-contain"
             />
           </div>
         ))}

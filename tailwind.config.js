@@ -35,14 +35,7 @@ export default {
           raw: "(orientation: landscape)",
         },
       ],
-      md: [
-        {
-          min: "768px",
-        },
-        {
-          raw: "(orientation: landscape)",
-        },
-      ],
+
       tight: {
         raw: "(max-height: 800px) and (orientation: landscape)",
       },
@@ -102,7 +95,7 @@ export default {
       screens: {
         mobile: "480px", // Adjust based on your preference
         "ipad-mini": "768px",
-        "ipad-pro": "1024px",
+        "ipad-pro": "1020px",
         desktop: "1366px", // You can adjust this if needed
       },
 

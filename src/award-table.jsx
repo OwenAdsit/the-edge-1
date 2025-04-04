@@ -47,25 +47,25 @@ const ResponsiveAwardsTable = () => {
   ];
 
   return (
-    <div className="p-6 w-full app-container mx-auto">
-      <h1 className="text-45 ipad-pro:text-55 font-normal mb-6 text-start">
-        Awards
-      </h1>
+    <div className="w-full app-container mx-auto">
+      <h1 className="text-45 lg:text-55 font-normal mb-6 text-start">Awards</h1>
       <hr />
       <div className="divide-y ">
         {awards.map((item, index) => (
-          <div key={index} className="py-4">
+          <div key={index} className="py-[38px] sm:py-[32px]">
             {/* Mobile view (default) - Stacked layout */}
-            <div className="md:hidden flex flex-col items-start">
+            <div className="sm:hidden flex flex-col items-start space-y-4">
               <div className="text-14">{item.year}</div>
               <div className="text-14">{item.award}</div>
               <div className="text-14">{item.issuer}</div>
             </div>
 
             {/* Desktop view (md and up) - Grid layout */}
-            <div className="hidden md:grid md:grid-cols-3 py-6">
-              <div className=" text-start text-14">{item.year}</div>
-              <div className="text-14 text-start">{item.award}</div>
+            <div className="hidden sm:grid sm:grid-cols-2 ">
+              <div className="flex flex-row items-center gap-14">
+                <div className=" text-start text-14">{item.year}</div>
+                <div className="text-14 text-start">{item.award}</div>
+              </div>
               <div className="text-right text-14 ">{item.issuer}</div>
             </div>
           </div>
