@@ -196,7 +196,7 @@ const EdgeResortFooter = () => {
         </div>
         {/*award showcase section*/}
       </div>
-      <div className="w-full overflow-clip mt-16">
+      <div className="w-full overflow-clip mt-20">
         <div className="flex flex-row flex-nowrap items-center ">
           {awards.map((award, index) => (
             <div
@@ -206,14 +206,14 @@ const EdgeResortFooter = () => {
               <img
                 src={window.location.origin + award.image}
                 alt={award.title}
-                className="w-[80px] sm:w-[117px] h-[87px] object-contain"
+                className="w-[80px] sm:w-[161px] h-[99px] object-contain"
               />
             </div>
           ))}
         </div>
       </div>
 
-      <div className="mt-16 text-s">
+      <div className="mt-20 text-s">
         <div className="hidden lg:flex lg:flex-row lg:justify-between lg:items-center mb-6 ">
           <span>Reservations@theedgebali.com</span>
           <span>+62 361 847 0700</span>

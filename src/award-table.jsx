@@ -48,25 +48,25 @@ const ResponsiveAwardsTable = () => {
 
   return (
     <div className="w-full app-container mx-auto">
-      <h1 className="text-45 lg:text-55 font-normal mb-6 text-start">Awards</h1>
+      <h1 className="display-1 font-normal mb-6 text-start">Awards</h1>
       <hr />
       <div className="divide-y ">
         {awards.map((item, index) => (
           <div key={index} className="py-[38px] sm:py-[32px]">
             {/* Mobile view (default) - Stacked layout */}
-            <div className="sm:hidden flex flex-col items-start space-y-4">
-              <div className="text-14">{item.year}</div>
-              <div className="text-14">{item.award}</div>
-              <div className="text-14">{item.issuer}</div>
+            <div className="sm:hidden flex flex-col items-start space-y-4 text-lg">
+              <div className="">{item.year}</div>
+              <div className="">{item.award}</div>
+              <div className="">{item.issuer}</div>
             </div>
 
             {/* Desktop view (md and up) - Grid layout */}
-            <div className="hidden sm:grid sm:grid-cols-2 ">
+            <div className="hidden sm:grid sm:grid-cols-2 text-lg">
               <div className="flex flex-row items-center gap-14">
-                <div className=" text-start text-14">{item.year}</div>
-                <div className="text-14 text-start">{item.award}</div>
+                <div className=" text-start ">{item.year}</div>
+                <div className=" text-start">{item.award}</div>
               </div>
-              <div className="text-right text-14 ">{item.issuer}</div>
+              <div className="text-right  ">{item.issuer}</div>
             </div>
           </div>
         ))}

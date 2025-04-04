@@ -11,11 +11,11 @@ function DiningSection() {
           <div className="grid grid-cols-2 gap-16 lg:mb-10 xl:mb-16">
             {/* Text Content */}
             <div className="flex flex-col flex-1 items-start justify-center  px-2 xl:px-24">
-              <h1 className="text-25 font-normal mb-6 text-start ">
+              <h1 className="display-6 font-normal mb-6 text-start ">
                 High tea by the ocean, sunset spritz on the cliff, and elegant
                 dinners—experience a true culinary escape in southern Bali.
               </h1>
-              <button className="text-16 h transition-colors  flex flex-row gap-6 items-center border-b border-dark">
+              <button className="text-lg h transition-colors  flex flex-row gap-6 items-center border-b border-dark">
                 See dining options <MoveUpRight size={20} strokeWidth={1} />
               </button>
             </div>
@@ -43,7 +43,7 @@ function DiningSection() {
 
             {/* Description */}
             <div className="flex flex-1 items-center justify-center px-2 xl:px-[21%]">
-              <p className="text-16  text-start ">
+              <p className="text-body text-start ">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua. At vero eos et accusam et
@@ -59,12 +59,12 @@ function DiningSection() {
       <div className="lg:hidden">
         <div className="px-4 py-12  ">
           <div className="mb-[75.82px]">
-            <h1 className="text-22 font-normal  text-start mb-7 sm:mb-4 ">
+            <h1 className="display-6 font-normal  text-start mb-7 sm:mb-4 ">
               High tea by the ocean, sunset spritz on the cliff, and elegant
               dinners—experience a true culinary escape in southern Bali.
             </h1>
 
-            <button className="text-17 transition-colors  flex flex-row gap-6  items-center border-b border-dark ">
+            <button className="text-lg transition-colors  flex flex-row gap-6  items-center border-b border-dark ">
               See dining options <MoveUpRight size={20} strokeWidth={1} />
             </button>
           </div>
@@ -75,7 +75,7 @@ function DiningSection() {
             className="w-[354px] h-[357px] sm:w-[691px] sm:h-[438px] object-cover "
           />
 
-          <p className="text-15  text-start mt-28 mb-[75.82px]">
+          <p className="text-body  text-start mt-28 mb-[75.82px]">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
