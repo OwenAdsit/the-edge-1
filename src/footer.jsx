@@ -54,33 +54,33 @@ const EdgeResortFooter = () => {
   ];
 
   return (
-    <div className="w-full app-container  mx-auto p-6 bg-white h-screen">
+    <div className="w-full app-container  mx-auto bg-white h-screen mt-10">
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className=" grid grid-cols-1 gap-y-12 ipad-pro:grid-cols-3   ">
-        <div className=" flex justify-center ipad-pro:justify-start ">
+      <div className=" grid grid-cols-1 gap-y-20 lg:grid-cols-3   ">
+        <div className=" flex justify-center lg:justify-start ">
           <img
             src="/logo.png"
             alt="Logo"
-            className="w-[134px] h-[64px] desktop:w-[228px] desktop:h-[118px] ipad-pro:w-[184px] ipad-pro:h-[87px]  "
+            className="w-[134px] h-[64px] xl:w-[228px] xl:h-[118px] lg:w-[184px] lg:h-[87px]  "
           />
         </div>
         {/* Explore Section */}
         <div className="text-start">
-          <h2 className=" text-start text-18 font-semibold ipad-mini:text-15 ipad-pro:text-16 mb-6">
+          <h2 className=" text-start text-18 font-semibold sm:text-15 lg:text-16 mb-6">
             Explore
           </h2>
 
-          {/* Desktop Grid - 4 columns */}
-          <div className="hidden ipad-pro:grid ipad-pro:grid-cols-2 ipad-pro:gap-x-2 ipad-pro:gap-y-3 test-start">
+          {/* xl Grid - 4 columns */}
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 test-start">
             {exploreLinks.map((link, index) => (
               <a key={index} href="#" className="text-16">
                 {link.title}
               </a>
             ))}
           </div>
-          <div className="hidden  ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-2 sm:gap-y-3 ipad-pro:hidden text-start ">
+          <div className="hidden  sm:grid sm:grid-cols-4 sm:gap-x-2 sm:gap-y-3 lg:hidden text-start ">
             {exploreLinks.map((link, index) => (
               <a key={index} href="#" className="text-15">
                 {link.title}
@@ -89,7 +89,7 @@ const EdgeResortFooter = () => {
           </div>
 
           {/* Mobile Grid - 3 columns for explore */}
-          <div className="grid grid-cols-3 gap-x-2 gap-y-3 ipad-mini:hidden text-start">
+          <div className="grid grid-cols-3 gap-x-2 gap-y-3 sm:hidden text-start">
             {exploreLinks.map((link, index) => (
               <a key={index} href="#" className="text-18">
                 {link.title}
@@ -100,11 +100,11 @@ const EdgeResortFooter = () => {
 
         {/* Accommodations Section */}
         <div className="text-start">
-          <h2 className=" font-semibold  text-18 ipad-mini:text-15 ipad-pro:text-16  mb-6">
+          <h2 className=" font-semibold  text-18 sm:text-15 lg:text-16  mb-6">
             Accommodations
           </h2>
 
-          <div className="hidden ipad-pro:grid md:grid-cols-2 ipad-pro:gap-x-2 ipad-pro:gap-y-3 text-start">
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 text-start">
             {accommodationLinks.map((link, index) => (
               <a key={index} href="#" className="text-16 ">
                 {link.title}{" "}
@@ -112,7 +112,7 @@ const EdgeResortFooter = () => {
               </a>
             ))}
           </div>
-          <div className="hidden ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-2 ipad-mini:gap-y-3 ipad-pro:hidden text-start">
+          <div className="hidden sm:grid sm:grid-cols-4 sm:gap-x-2 sm:gap-y-3 lg:hidden text-start">
             {accommodationLinks.map((link, index) => (
               <a key={index} href="#" className="text-15">
                 {link.title} <span className="">({link.bedrooms} Bedroom)</span>
@@ -120,7 +120,7 @@ const EdgeResortFooter = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 gap-x-2 gap-y-3 ipad-mini:hidden text-start">
+          <div className="grid grid-cols-2 gap-x-2 gap-y-3 sm:hidden text-start">
             {accommodationLinks.map((link, index) => (
               <a key={index} href="#" className="text-18">
                 {link.title}{" "}
@@ -132,7 +132,7 @@ const EdgeResortFooter = () => {
 
         {/* Newsletter Section */}
         <div className="text-start">
-          <h2 className="text-18 font-semibold ipad-mini:text-15 ipad-pro:text-16 mb-6">
+          <h2 className="text-18 font-semibold sm:text-15 lg:text-16 mb-6">
             Newsletter
           </h2>
 
@@ -155,18 +155,16 @@ const EdgeResortFooter = () => {
 
         {/* Help Section */}
         <div className="text-start">
-          <h2 className="font-semibold ipad-mini:text-15 ipad-pro:text-16 mb-6">
-            Help
-          </h2>
+          <h2 className="font-semibold sm:text-15 lg:text-16 mb-6">Help</h2>
 
-          <div className="hidden ipad-pro:grid ipad-pro:grid-cols-2 ipad-pro:gap-x-4 ipad-pro:gap-y-3 text-16 text-start ">
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-4 lg:gap-y-3 text-16 text-start ">
             {helpLinks.map((link, index) => (
               <a key={index} href="#" className="">
                 {link.title}
               </a>
             ))}
           </div>
-          <div className="hidden ipad-mini:grid ipad-mini:grid-cols-4 ipad-mini:gap-x-4 ipad-mini:gap-y-3 ipad-pro:hidden text-15 text-start">
+          <div className="hidden sm:grid sm:grid-cols-4 sm:gap-x-4 sm:gap-y-3 lg:hidden text-15 text-start">
             {helpLinks.map((link, index) => (
               <a key={index} href="#" className="">
                 {link.title}
@@ -174,7 +172,7 @@ const EdgeResortFooter = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 gap-x-4 gap-y-3 ipad-mini:hidden text-18">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-3 sm:hidden text-18">
             {helpLinks.map((link, index) => (
               <a
                 key={index}
@@ -188,9 +186,7 @@ const EdgeResortFooter = () => {
         </div>
         {/* Socal Media Section */}
         <div className="text-start">
-          <h1 className="font-semibold ipad-mini:text-15 ipad-pro:text-16 mb-6">
-            Socials
-          </h1>
+          <h1 className="font-semibold sm:text-15 lg:text-16 mb-6">Socials</h1>
           <div className="flex felx-row gap-10 items-center  ">
             {socialLinks.map((link, index) => (
               <a key={index} href={link.url} className="">
@@ -210,20 +206,20 @@ const EdgeResortFooter = () => {
           {awards.map((award, index) => (
             <div
               key={index}
-              className="flex-shrink-0 px-2 w-1/2 ipad-mini:w-1/3 ipad-pro:w-1/4 desktop:w-1/5"
+              className="flex-shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
             >
               <img
                 src={window.location.origin + award.image}
                 alt={award.title}
-                className="w-[117px] h-[87px] object-contain"
+                className="w-[80px] sm:w-[117px] h-[87px] object-contain"
               />
             </div>
           ))}
         </div>
       </div>
 
-      <div className="mt-16 text-12">
-        <div className="hidden ipad-pro:flex ipad-pro:flex-row ipad-pro:justify-between ipad-pro:items-center mb-6 ">
+      <div className="mt-16 text-s">
+        <div className="hidden lg:flex lg:flex-row lg:justify-between lg:items-center mb-6 ">
           <span>Reservations@theedgebali.com</span>
           <span>+62 361 847 0700</span>
           <span>© 2025 The Edge, All rights reserved.</span>
@@ -233,7 +229,7 @@ const EdgeResortFooter = () => {
           </span>
           <button className="border-b border-dark">Back to top</button>
         </div>
-        <div className="hidden ipad-mini:flex flex-col gap-5 ipad-pro:hidden mb-6">
+        <div className="hidden sm:flex flex-col gap-5 lg:hidden mb-6">
           <div className="flex items-center justify-between">
             {" "}
             <span>Reservations@theedgebali.com</span>
@@ -251,7 +247,7 @@ const EdgeResortFooter = () => {
             <button className="border-b border-dark">Back to top</button>
           </div>
         </div>
-        <div className=" flex flex-col gap-5 ipad-mini:hidden mb-6">
+        <div className=" flex flex-col gap-5 sm:hidden mb-6">
           <div className="flex items-center justify-between">
             {" "}
             <span>Reservations@theedgebali.com</span>
