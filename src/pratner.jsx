@@ -20,12 +20,12 @@ const pratners = [
 ];
 const PratnerSections = () => {
   return (
-    <div className="w-full overflow-clip mt-16 app-container mx-auto">
+    <div className="w-full overflow-clip mt-16 app-container mx-auto sm:px-10">
       <div className="flex flex-row flex-nowrap items-center   ">
         {pratners.map((pratner, index) => (
           <div
             key={index}
-            className="flex-shrink-0 px-2 w-1/2 sm:w-1/4 lg:w-1/4 xl:w-1/4 xl:px-6"
+            className="flex-shrink-0 w-1/2 sm:w-1/4 lg:w-1/4 xl:w-1/4 xl:px-16"
           >
             <img
               src={window.location.origin + pratner.image}

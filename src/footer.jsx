@@ -213,7 +213,7 @@ const EdgeResortFooter = () => {
         </div>
       </div>
 
-      <div className="mt-20 text-s">
+      <div className="mt-20 text-xs">
         <div className="hidden lg:flex lg:flex-row lg:justify-between lg:items-center mb-6 ">
           <span>Reservations@theedgebali.com</span>
           <span>+62 361 847 0700</span>
@@ -242,14 +242,14 @@ const EdgeResortFooter = () => {
             <button className="border-b border-dark">Back to top</button>
           </div>
         </div>
-        <div className=" flex flex-col gap-5 sm:hidden mb-6">
-          <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-5 sm:hidden mb-6 items-start">
+          <div className="flex items-center justify-between w-full">
             {" "}
             <span>Reservations@theedgebali.com</span>
             <span>+62 361 847 0700</span>
           </div>
           <span>© 2025 The Edge, All rights reserved.</span>
-          <div className=" flex items-center justify-between">
+          <div className=" flex items-center justify-between w-full">
             <span>
               Made With ❤︎{" "}
               <button className="border-b border-dark">

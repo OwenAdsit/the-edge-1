@@ -3,10 +3,10 @@ import React from "react";
 
 function DiningSection() {
   return (
-    <div className="w-full bg-white min-h-screen app-container">
+    <div className="w-full bg-white min-h-screen">
       {/* Desktop and iPad Pro Layout (md and up) */}
       <div className="hidden lg:block">
-        <div className="app-container mx-auto px-4 py-16 xl:py-24">
+        <div className="app-container mx-auto py-16 xl:py-24">
           {/* First Section */}
           <div className="grid grid-cols-2 gap-16 lg:mb-10 xl:mb-16">
             {/* Text Content */}
@@ -57,14 +57,14 @@ function DiningSection() {
       </div>
 
       <div className="lg:hidden">
-        <div className="px-4 py-12  ">
+        <div className="app-container sm:px-10 py-12  ">
           <div className="mb-[75.82px]">
             <h1 className="display-6 font-normal  text-start mb-7 sm:mb-4 ">
               High tea by the ocean, sunset spritz on the cliff, and elegant
               dinners—experience a true culinary escape in southern Bali.
             </h1>
 
-            <button className="text-lg transition-colors  flex flex-row gap-6  items-center border-b border-dark ">
+            <button className="text-lg transition-colors flex flex-row gap-6  items-center border-b border-dark ">
               See dining options <MoveUpRight size={20} strokeWidth={1} />
             </button>
           </div>
@@ -72,7 +72,7 @@ function DiningSection() {
           <img
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
             alt="Elegant dining setup"
-            className="w-[354px] h-[357px] sm:w-[691px] sm:h-[438px] object-cover "
+            className="h-[357px] w-full sm:h-[438px] object-cover "
           />
 
           <p className="text-body  text-start mt-28 mb-[75.82px]">
@@ -86,7 +86,7 @@ function DiningSection() {
           <img
             src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop"
             alt="Restaurant ambiance"
-            className="w-[354px] h-[357px] sm:w-[691px] sm:h-[438px] object-cover"
+            className="h-[357px] w-full sm:h-[438px] object-cover"
           />
         </div>
       </div>
