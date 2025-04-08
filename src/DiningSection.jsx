@@ -43,7 +43,7 @@ function DiningSection() {
 
             {/* Description */}
             <div className="flex flex-1 items-center justify-center">
-              <div className="xl:max-w-[60%] xl:pl-[7%]">
+              <div className="xl:max-w-[55%] ">
                 <p className="text-body text-start">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
