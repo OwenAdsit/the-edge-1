@@ -10,7 +10,7 @@ function DiningSection() {
           {/* First Section */}
           <div className="grid grid-cols-2 gap-16 lg:mb-10 xl:mb-16">
             {/* Text Content */}
-            <div className="flex flex-col flex-1 items-start justify-center  px-2 xl:px-24">
+            <div className="flex flex-col flex-1 items-start justify-center  px-2 xl:px-28">
               <h1 className="display-6 font-normal mb-6 text-start ">
                 High tea by the ocean, sunset spritz on the cliff, and elegant
                 dinners—experience a true culinary escape in southern Bali.
@@ -25,7 +25,7 @@ function DiningSection() {
               <img
                 src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
                 alt="Elegant dining setup"
-                className="w-[421px] xl:w-[622px] h-[499px] xl:h-[600px] object-cover"
+                className="w-[421px] xl:w-[622px] h-[499px] xl:h-[612px] object-cover"
               />
             </div>
           </div>
@@ -42,15 +42,17 @@ function DiningSection() {
             </div>
 
             {/* Description */}
-            <div className="flex flex-1 items-center justify-center px-2 xl:px-[21%]">
-              <p className="text-body text-start ">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor.
-              </p>
+            <div className="flex flex-1 items-center justify-center">
+              <div className="xl:max-w-[60%] xl:pl-[7%]">
+                <p className="text-body text-start">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor.
+                </p>
+              </div>
             </div>
           </div>
         </div>
