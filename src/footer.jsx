@@ -58,7 +58,7 @@ const EdgeResortFooter = () => {
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className=" grid grid-cols-1 gap-y-20 lg:grid-cols-3  xl:gap-x-[20%]">
+      <div className=" grid grid-cols-1 gap-y-24 lg:grid-cols-3  xl:gap-x-[20%]">
         <div className=" flex justify-center lg:justify-start ">
           <img
             src="/logo.png"
@@ -196,12 +196,12 @@ const EdgeResortFooter = () => {
         </div>
         {/*award showcase section*/}
       </div>
-      <div className="w-full overflow-clip mt-20">
-        <div className="flex flex-row flex-nowrap items-center ">
+      <div className="w-full  mt-24">
+        <div className="flex flex-row flex-nowrap items-center overflow-clip  gap-x-none sm:gap-x-12 ">
           {awards.map((award, index) => (
             <div
               key={index}
-              className="flex-shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
+              className="flex-shrink-0  w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
             >
               <img
                 src={window.location.origin + award.image}
@@ -213,7 +213,7 @@ const EdgeResortFooter = () => {
         </div>
       </div>
 
-      <div className="mt-20 text-s">
+      <div className="mt-24 text-s">
         <div className="hidden lg:flex lg:flex-row lg:justify-between lg:items-center mb-6 ">
           <span>Reservations@theedgebali.com</span>
           <span>+62 361 847 0700</span>
