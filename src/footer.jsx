@@ -58,7 +58,7 @@ const EdgeResortFooter = () => {
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className=" grid grid-cols-1 gap-y-24 lg:grid-cols-3  xl:gap-x-[20%]">
+      <div className=" grid grid-cols-1 gap-y-24 lg:grid-cols-3  xl:gap-x-[16%]">
         <div className=" flex justify-center lg:justify-start ">
           <img
             src="/logo.png"
@@ -100,7 +100,7 @@ const EdgeResortFooter = () => {
         <div className="text-start">
           <h2 className=" font-semibold   mb-6">Accommodations</h2>
 
-          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 text-start">
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-10 lg:gap-y-3 text-start">
             {accommodationLinks.map((link, index) => (
               <a key={index} href="#">
                 {link.title}{" "}
