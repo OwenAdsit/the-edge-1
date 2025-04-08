@@ -8,7 +8,7 @@ const LuxuryHaven = () => {
           A secluded haven of luxury above the Indian Ocean, where endless ocean
           views merge seamlessly with the horizon.
         </h2>
-        <p className="mt-4 text-body leading-relaxed text-start">
+        <p className="mt-4 text-body leading-relaxed text-start max-w-lg sm:max-w-[500px] lg:max-w-[470px]">
           Perched atop Uluwatu’s cliffs, the villas at The edge offer unmatched
           privacy and breathtaking ocean views. A perfect blend of modern luxury
           and traditional charm, each villa serves as your own personal
