@@ -58,7 +58,7 @@ const EdgeResortFooter = () => {
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className=" grid grid-cols-1 gap-y-24 lg:grid-cols-3   xl:gap-x-[16%]">
+      <div className=" grid grid-cols-1 gap-y-24 lg:grid-cols-3   lg:gap-x-[11%] ">
         <div className=" flex justify-center lg:justify-start ">
           <img
             src="/logo.png"
@@ -197,7 +197,7 @@ const EdgeResortFooter = () => {
         {/*award showcase section*/}
       </div>
       <div className="w-full  mt-24">
-        <div className="flex flex-row flex-nowrap items-center overflow-clip  gap-x-none sm:gap-x-12 ">
+        <div className="flex flex-row flex-nowrap items-center overflow-clip  gap-x-none sm:gap-x-[2.6%] ">
           {awards.map((award, index) => (
             <div
               key={index}
