@@ -58,7 +58,7 @@ const EdgeResortFooter = () => {
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className=" grid grid-cols-1 gap-y-20 lg:grid-cols-3  xl:gap-x-[20%]">
+      <div className=" grid grid-cols-1 gap-y-24 lg:grid-cols-3   lg:gap-x-[12.4%] ">
         <div className=" flex justify-center lg:justify-start ">
           <img
             src="/logo.png"
@@ -71,7 +71,7 @@ const EdgeResortFooter = () => {
           <h2 className=" text-start font-semibold  mb-6">Explore</h2>
 
           {/* xl Grid - 4 columns */}
-          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 test-start">
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 test-start ">
             {exploreLinks.map((link, index) => (
               <a key={index} href="#" className="">
                 {link.title}
@@ -100,7 +100,7 @@ const EdgeResortFooter = () => {
         <div className="text-start">
           <h2 className=" font-semibold   mb-6">Accommodations</h2>
 
-          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 text-start">
+          <div className="hidden lg:grid lg:grid-cols-2 gap-x-2 xl:gap-x-10 lg:gap-y-3 text-start">
             {accommodationLinks.map((link, index) => (
               <a key={index} href="#">
                 {link.title}{" "}
@@ -196,12 +196,12 @@ const EdgeResortFooter = () => {
         </div>
         {/*award showcase section*/}
       </div>
-      <div className="w-full overflow-clip mt-20">
-        <div className="flex flex-row flex-nowrap items-center ">
+      <div className="w-full  mt-24">
+        <div className="flex flex-row flex-nowrap items-center overflow-clip  gap-x-none sm:gap-x-[2.6%] ">
           {awards.map((award, index) => (
             <div
               key={index}
-              className="flex-shrink-0 px-2 w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
+              className="flex-shrink-0  w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
             >
               <img
                 src={window.location.origin + award.image}
