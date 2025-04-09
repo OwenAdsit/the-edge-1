@@ -71,7 +71,7 @@ const EdgeResortFooter = () => {
           <h2 className=" text-start font-semibold  mb-6">Explore</h2>
 
           {/* xl Grid - 4 columns */}
-          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 test-start">
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-3 test-start ">
             {exploreLinks.map((link, index) => (
               <a key={index} href="#" className="">
                 {link.title}
@@ -100,7 +100,7 @@ const EdgeResortFooter = () => {
         <div className="text-start">
           <h2 className=" font-semibold   mb-6">Accommodations</h2>
 
-          <div className="hidden lg:grid lg:grid-cols-2 gap-x-4 xl:gap-x-10 lg:gap-y-3 text-start">
+          <div className="hidden lg:grid lg:grid-cols-2 gap-x-2 xl:gap-x-10 lg:gap-y-3 text-start">
             {accommodationLinks.map((link, index) => (
               <a key={index} href="#">
                 {link.title}{" "}
