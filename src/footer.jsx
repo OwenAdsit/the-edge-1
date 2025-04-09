@@ -100,7 +100,7 @@ const EdgeResortFooter = () => {
         <div className="text-start">
           <h2 className=" font-semibold   mb-6">Accommodations</h2>
 
-          <div className="hidden lg:grid lg:grid-cols-2 gap-x-2 xl:gap-x-10 lg:gap-y-3 text-start">
+          <div className="hidden lg:grid lg:grid-cols-[auto_auto] gap-x-2 xl:gap-x-10 lg:gap-y-3 text-start">
             {accommodationLinks.map((link, index) => (
               <a key={index} href="#">
                 {link.title}{" "}
@@ -201,7 +201,7 @@ const EdgeResortFooter = () => {
           {awards.map((award, index) => (
             <div
               key={index}
-              className="flex-shrink-0  w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
+              className="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 xl:w-1/5"
             >
               <img
                 src={window.location.origin + award.image}
