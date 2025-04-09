@@ -58,7 +58,7 @@ const EdgeResortFooter = () => {
       {/* Logo - centered on mobile/tablet */}
 
       {/* Main footer content */}
-      <div className=" grid grid-cols-1 gap-y-24 lg:grid-cols-3   lg:gap-x-[11%] ">
+      <div className=" grid grid-cols-1 gap-y-24 lg:grid-cols-3   lg:gap-x-[12.4%] ">
         <div className=" flex justify-center lg:justify-start ">
           <img
             src="/logo.png"
